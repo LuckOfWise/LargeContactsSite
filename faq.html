@@ -68,6 +68,11 @@
       .w100p {
       width: 100%;
       }
+      h2.question:before{ content: "Q. "; color: #CC0033; }
+      div.answer{border-left: 0.5em solid #000; padding: 0.5em; margin-bottom: 10px;}
+      div.answer p{font-size:90%; line-height:25px; }
+      div.answer li+li{ border-top: 1px dotted #DDD; margin-top: .25em; padding-top: .25em; }
+      ul.aside li+li{ border: none; margin-top: 0; padding-top: 0; }
     </style>
 
     <!-- Le fav and touch icons -->
@@ -107,7 +112,15 @@
         </div>
         <div class="row">
           <div class="span14">
-            <h2 style="line-height:300px;vertical-align: middle;">ただいま準備中</h2>
+            <h2 class="question">文字サイズの変え方を教えてください。</h2>
+            <div class="answer">
+              <p>画面上部右側のある設定ボタン、もしくはメニューキー押下時に表示される設定から設定画面を開き、文字サイズを変更できます。</p>
+            </div>
+            <h2 class="question">通話履歴は見れませんか？</h2>
+            <div class="answer">
+              <p>大きな電話帳には通話履歴を見る機能はありません。<br />
+                 現在大きく表示される通話履歴アプリを開発中ですので、<br />公開後は是非使ってみてください。</p>
+            </div>
           </div>
         </div>
       </div>
