@@ -184,7 +184,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 30px;
   font-weight: normal;
   line-height: 18px;
   color: #404040;
@@ -473,7 +473,7 @@ ol {
   list-style: decimal;
 }
 li {
-  line-height: 18px;
+  line-height: 30px;
   color: #808080;
 }
 ul.unstyled {
@@ -1428,7 +1428,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   display: block;
   float: none;
   padding: 10px 10px 11px;
-  line-height: 19px;
+  line-height: 30px;
   text-decoration: none;
 }
 .topbar div > ul a:hover, .nav a:hover {
