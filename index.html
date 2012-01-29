@@ -25,6 +25,11 @@
       .w100p {
       width: 100%;
       }
+      .block div {
+      margin-right: 15px;
+      float: left;
+      }
+
     </style>
 
     <!-- Le fav and touch icons -->
@@ -32,15 +37,52 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.socialbutton-1.8.1.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#hatena').socialbutton('hatena', {
+              button: 'vertical'
+          });
+
+        $('#twitter').socialbutton('twitter', {
+          button: 'vertical',
+              text: 'Androidアプリ「大きな電話帳」',
+              via: 'aotaijp'
+        });
+        
+        $('#google_plusone').socialbutton('google_plusone', {
+          lang: 'ja',
+          size: 'tall'
+        });
+
+
+        $('#fb_like').socialbutton('facebook_like', {
+          button: 'box_count'
+        });
+
+        $('#fb_share').socialbutton('facebook_share', {
+          button: 'box_count'
+        });
+
+      });
+    </script>
   </head>
 
   <body>
-
     <div class="topbar">
       <div class="bc-white">
         <div class="container p5 center">
-    	  <img src="images/logo.png" />
-    	</div>
+    	    <img src="images/logo.png" />
+          <div class="block" style="float: right;">
+            <div id="hatena"></div>
+            <div id="twitter"></div>
+            <div id="facebook"></div>
+            <div id="google_plusone"></div>
+            <div id="fb_like"></div>
+            <div id="fb_share"></div>
+          </div>
+    	  </div>
       </div>
       <div class="fill">
         <div class="container">
@@ -57,7 +99,6 @@
     </div>
 
     <div class="container">
-
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div style="position: relative; padding-bottom: 20px;">
         <img src="images/eye_catch.png" />
