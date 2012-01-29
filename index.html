@@ -42,29 +42,24 @@
     <script type="text/javascript">
       $(function() {
         $('#hatena').socialbutton('hatena', {
-              button: 'vertical'
+              button: 'simple'
           });
 
         $('#twitter').socialbutton('twitter', {
-          button: 'vertical',
+          button: 'none',
               text: 'Androidアプリ「大きな電話帳」',
               via: 'aotaijp'
         });
         
         $('#google_plusone').socialbutton('google_plusone', {
           lang: 'ja',
+		      size: 'medium',
           size: 'tall'
         });
 
-
         $('#fb_like').socialbutton('facebook_like', {
-          button: 'box_count'
+          button: 'button_count'
         });
-
-        $('#fb_share').socialbutton('facebook_share', {
-          button: 'box_count'
-        });
-
       });
     </script>
   </head>
@@ -77,10 +72,8 @@
           <div class="block" style="float: right;">
             <div id="hatena"></div>
             <div id="twitter"></div>
-            <div id="facebook"></div>
             <div id="google_plusone"></div>
             <div id="fb_like"></div>
-            <div id="fb_share"></div>
           </div>
     	  </div>
       </div>
