@@ -230,7 +230,6 @@ body {
 a {
   color: #0069d6;
   text-decoration: none;
-  line-height: inherit;
   font-weight: inherit;
 }
 a:hover {
@@ -491,6 +490,8 @@ dl dt {
 }
 dl dd {
   margin-left: 9px;
+  margin-top: 9px;
+  margin-bottom: 20px;
 }
 hr {
   margin: 20px 0 19px;
